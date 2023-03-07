@@ -7,7 +7,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllProfiles } from '../../redux/actions';
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {    
+const Navbar = () => {  
+    const [loaded, setLoaded] = useState(false)  
     const [searchName, setSearchName] = useState('');
 
     useEffect(() => {
@@ -29,7 +30,8 @@ const Navbar = () => {
     return(
         <div className="main-wrap">
             <div className="main-logo">
-                <img src={logo} alt="" />
+                <img onLoad={() => setLoaded(true)} src={logo} alt="" />
+                {!loaded && <div className='gag'></div>}
             </div>
             <div className="main-search-profile">
                 <SearchIcon />
