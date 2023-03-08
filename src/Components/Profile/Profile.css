@@ -5,6 +5,9 @@
 }
 
 .profile-back-button{
+    display: flex;
+    align-items: center;
+    color: black;
     border: none;
     outline: none;
     background: none;

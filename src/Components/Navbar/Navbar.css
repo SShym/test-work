@@ -4,6 +4,7 @@
 }
 
 .login-button-wrap{
+    z-index: 1;
     cursor: pointer;
     position: absolute;
     right: 15px;

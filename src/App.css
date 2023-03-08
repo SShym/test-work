@@ -29,3 +29,7 @@ input {
   transform: translate(0, 100%);
   width: 300px;
 }
+
+button{
+  background: none;
+}
