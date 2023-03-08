@@ -1,6 +1,7 @@
 import './Navbar.css'
 import { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
+import { getAllProfiles } from '../../redux/actions';
 import { GoogleLogin } from 'react-google-login';
 import { ReactComponent as GoogleIcon } from '../../images/google-icon.svg';
 import { auth } from '../../redux/actions';
@@ -11,6 +12,10 @@ import { gapi } from 'gapi-script';
 const Navbar = () => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
     
+    useEffect(() => {
+      dispatch(getAllProfiles());
+    }, []); // eslint-disable-line
+
     useEffect(() => {
         gapi.load('client:auth2', ()=>{
           gapi.client.init({

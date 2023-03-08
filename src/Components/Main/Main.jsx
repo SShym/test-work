@@ -1,21 +1,15 @@
 import './Main.css'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import logo from '../../images/logo.png';
 import loader from '../../images/loader.gif';
 import { ReactComponent as SearchIcon } from '../../images/search-icon.svg';
-import { useDispatch, useSelector } from "react-redux";
-import { getAllProfiles } from '../../redux/actions';
+import { useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {  
     const [loaded, setLoaded] = useState(false)  
     const [searchName, setSearchName] = useState('');
 
-    useEffect(() => {
-        dispatch(getAllProfiles());
-    }, []); // eslint-disable-line
-
-    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const allProfiles = useSelector(state => state.mainReducer.allProfiles);
