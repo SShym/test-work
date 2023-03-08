@@ -7,6 +7,13 @@ $light: #D3DEEA;
 $big: 'Abril Fatface', serif;
 $body: 'Lato', sans-serif;
 
+.error-wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .container {
   margin: 0 auto;
   position: relative;
@@ -93,7 +100,7 @@ $body: 'Lato', sans-serif;
 }
 
 .two {
-  left: 23%;
+  left: 24%;
   border-radius: 0 0 50% 50%;
 }
 
@@ -103,7 +110,7 @@ $body: 'Lato', sans-serif;
 }
 
 .four {
-  left: 74.5%;
+  left: 75.8%;
   border-radius: 0 0 30% 100%;
 }
 

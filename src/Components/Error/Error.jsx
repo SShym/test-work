@@ -2,7 +2,7 @@ import './Error.scss';
 
 const Error = () => {
     return(
-        <div>
+        <div className='error-wrap'>
             <div class="top">
                 <h1 className="error-404">404</h1>
                 <h3 className="page-not-found">page not found</h3>
