@@ -37,8 +37,9 @@ const Profile = () => {
                     <img src={profile?.image} alt="" />
                     <h1>{profile?.name}</h1>
 
-                    <span>Informations</span>
                     <div className='profile-info'>
+                        <span>Informations</span>
+
                         <h2>Gender</h2>
                         <div>{profile?.gender || 'unknown'}</div>
 

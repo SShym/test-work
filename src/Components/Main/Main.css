@@ -103,7 +103,27 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    .main-logo img{
+        margin-bottom: 32px;
+    }
+
+    .main-card:first-child{
+        margin-top: 0;
+    }
+
+    .main-card{
+        width: 100%;
+        margin: 0px 20px;
+        margin-bottom: 25px;
+    }
+
+    .main-card img{
+        max-height: 100%;
+        width: 100%;
+        object-fit: fill;
+     }
+
     .main-search-profile{
         width: 90%;
     }
