@@ -32,7 +32,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
+    max-width: 415px;
 }
 
 .profile img{
@@ -102,14 +102,27 @@
         left: 15px;
     }
 
+    .profile{
+        width: 100%;
+    }
+
     .profile-info{
-        width: 75%;
+        max-width: 312px;
     }
 
     .profile span{
         margin: 0;
-        padding: 35px 0px 25px 25px;
+        padding: 35px 0px 25px 20px;
         display: flex;
         width: 100%;
+    }
+
+    .profile img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile h1{
+        font-size: 32px;
     }
 }
